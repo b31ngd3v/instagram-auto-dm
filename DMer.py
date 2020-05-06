@@ -8,7 +8,7 @@ import schedule
 x = 0
 
 def DMer():
-    usrnames = ['psinha_09', 'sinha.py']
+    usrnames = ['psinha_09', 'sinha.py']  # List of users to whom you want to send messages
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -21,8 +21,8 @@ def DMer():
     usrname_bar = browser.find_element_by_name('username')  # Find the username bar
     passwrd_bar = browser.find_element_by_name('password')  # Find the password bar
 
-    username = 'py_test'  # Enter your username here
-    password = 'qwertypad'  # Enter your password here
+    username = 'USERNAME'  # Enter your username here
+    password = 'PASSWORD'  # Enter your password here
 
     usrname_bar.send_keys(username)
     passwrd_bar.send_keys(password + Keys.ENTER)
@@ -51,7 +51,7 @@ def DMer():
         time.sleep(6)
 
         txt_box = browser.find_element_by_tag_name('textarea')
-        txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")
+        txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send
 
         time.sleep(2)
 
@@ -89,7 +89,7 @@ def DMer():
     
     x += 1
 
-timee = "16:44"  # Specific Time When The Post will be Posted
+timee = "16:44"  # Specific time when you want to send messages
 
 schedule.every().day.at(timee).do(DMer)
 
