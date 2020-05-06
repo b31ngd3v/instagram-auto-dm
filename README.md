@@ -1,6 +1,6 @@
 Instagram Auto DM
 ========
-<a href="https://www.instagram.com/sinha.py/"><img src="https://cdn.thenewstack.io/media/2017/06/eabeb0f2-f897a954-instagramheartspython.jpg" alt="Auto Post"/></a>
+<a href="https://www.instagram.com/sinha.py/"><img src="https://cdn.thenewstack.io/media/2017/06/eabeb0f2-f897a954-instagramheartspython.jpg" alt="Auto DMer"/></a>
 
 ## Before Running `DMer.py`
 
