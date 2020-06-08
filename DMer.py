@@ -7,13 +7,14 @@ import schedule
 
 x = 0
 
-def DMer():
-    usrnames = ['psinha_09', 'sinha.py']  # List of users to whom you want to send messages
+
+def dmer(x):
+    usrnames = ['psinha_09', 'sinha.py']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
         '--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1')
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome("chromedriver.exe", options=chrome_options)
     browser.get('https://www.instagram.com/accounts/login/')
 
     time.sleep(2)
@@ -21,14 +22,13 @@ def DMer():
     usrname_bar = browser.find_element_by_name('username')  # Find the username bar
     passwrd_bar = browser.find_element_by_name('password')  # Find the password bar
 
-    username = 'USERNAME'  # Enter your username here
-    password = 'PASSWORD'  # Enter your password here
+    username = 'py_test'  # Enter your username here
+    password = 'qwertypad'  # Enter your password here
 
     usrname_bar.send_keys(username)
     passwrd_bar.send_keys(password + Keys.ENTER)
 
     time.sleep(11)
-
 
     def send_msg(usrnames):
         browser.get('https://www.instagram.com/direct/new/')
@@ -51,7 +51,7 @@ def DMer():
         time.sleep(6)
 
         txt_box = browser.find_element_by_tag_name('textarea')
-        txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send
+        txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Customize your message
 
         time.sleep(2)
 
@@ -60,7 +60,6 @@ def DMer():
         snd_btnn.click()
 
         time.sleep(4)
-
 
     count = 0
     try:
@@ -75,23 +74,27 @@ def DMer():
 
     print(f'''
     Successfully Sent {count} Massages
-    
+
     Python Programme by
           ___   ___ _      _         
          | _ \ / __(_)_ _ | |_  __ _ 
          |  _/ \__ \ | ' \| ' \/ _` |
          |_|   |___/_|_||_|_||_\__,_|
-    
+
         Follow me on Instagram @sinha.py 
-    
+
         Github @sinhapy
     ''')
-    
+
     x += 1
 
-timee = "16:44"  # Specific time when you want to send messages
 
-schedule.every().day.at(timee).do(DMer)
+timee = "08:35"  # Specific Time When The message will be send
+
+try:
+    schedule.every().day.at(timee).do(dmer(x))
+except TypeError:
+    pass
 
 try:
     while True and x != 1:
