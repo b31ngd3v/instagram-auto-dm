@@ -5,10 +5,11 @@ import time
 import schedule
 
 
+global x
 x = 0
 
 
-def dmer(x):
+def dmer():
     usrnames = ['psinha_09', 'sinha.py']  # username whom you will send the message
 
     chrome_options = Options()
@@ -89,10 +90,10 @@ def dmer(x):
     x += 1
 
 
-timee = "08:35"  # Specific Time When The message will be send
+timee = "08:51"  # Specific Time When The message will be send
 
 try:
-    schedule.every().day.at(timee).do(dmer(x))
+    schedule.every().day.at(timee).do(dmer)
 except TypeError:
     pass
 
