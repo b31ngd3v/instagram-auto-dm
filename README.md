@@ -6,11 +6,11 @@ Instagram Auto DM
 
 * Open DMer.py File and Edit The Following Lines:
 
-1) `username = 'USERNAME'  # Enter your username here` [line:24]
+1) `username = 'USERNAME'  # Enter your username here` [line:25]
 
-2) `password = 'PASSWORD'  # Enter your password here` [line:25]
+2) `password = 'PASSWORD'  # Enter your password here` [line:26]
 
-3) `timee = "21:44"  # Specific Time When The Post will be Posted` [line:92]
+3) `timee = "21:44"  # Specific Time When The message will be send` [line:92]
 
 4) `txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send` [line:54]
 
