@@ -6,15 +6,15 @@ Instagram Auto DM
 
 * Open DMer.py File and Edit The Following Lines:
 
-1) `username = 'USERNAME'  # Enter your username here` [line:25]
+1) `username = 'USERNAME'  # Enter your username here` [line:26]
 
-2) `password = 'PASSWORD'  # Enter your password here` [line:26]
+2) `password = 'PASSWORD'  # Enter your password here` [line:27]
 
-3) `timee = "21:44"  # Specific Time When The message will be send` [line:92]
+3) `timee = "21:44"  # Specific Time When The message will be send` [line:93]
 
-4) `txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send` [line:54]
+4) `txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send` [line:55]
 
-5) `usrnames = ['psinha_09', 'sinha.py']  # List of users to whom you want to send messages` [line:11]
+5) `usrnames = ['psinha_09', 'sinha.py']  # List of users to whom you want to send messages` [line:13]
 
 
 Ensure that you have Chrome installed and the
