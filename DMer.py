@@ -10,7 +10,7 @@ x = 0
 
 
 def dmer():
-    usrnames = ['psinha_09', 'sinha.py']  # username whom you will send the message
+    usrnames = ['psinha_09', 'codeinpy']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -82,9 +82,9 @@ def dmer():
          |  _/ \__ \ | ' \| ' \/ _` |
          |_|   |___/_|_||_|_||_\__,_|
 
-        Follow me on Instagram @sinha.py 
+        Follow me on Instagram @codeinpy 
 
-        Github @sinhapy
+        Github codein-py
     ''')
 
     x += 1
