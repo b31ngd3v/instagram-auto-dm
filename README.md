@@ -39,7 +39,7 @@ pip install schedule
 
 ## Run
 
-* Run the programme using:
+* Run the program using:
 
 ```bash
 python DMer.py
