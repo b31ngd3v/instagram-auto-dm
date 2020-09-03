@@ -10,7 +10,7 @@ x = 0
 
 
 def dmer():
-    usrnames = ['psinha_09', 'codeinpy']  # username whom you will send the message
+    usrnames = ['b31ngd3v', 'codeinpy']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -23,8 +23,8 @@ def dmer():
     usrname_bar = browser.find_element_by_name('username')  # Find the username bar
     passwrd_bar = browser.find_element_by_name('password')  # Find the password bar
 
-    username = 'py_test'  # Enter your username here
-    password = 'qwertypad'  # Enter your password here
+    username = 'USERNAME'  # Enter your username here
+    password = 'PASSWORD'  # Enter your password here
 
     usrname_bar.send_keys(username)
     passwrd_bar.send_keys(password + Keys.ENTER)
@@ -76,15 +76,15 @@ def dmer():
     print(f'''
     Successfully Sent {count} Massages
 
-    Python Programme by
+    Python Program by
           ___   ___ _      _         
          | _ \ / __(_)_ _ | |_  __ _ 
          |  _/ \__ \ | ' \| ' \/ _` |
          |_|   |___/_|_||_|_||_\__,_|
 
-        Follow me on Instagram @codeinpy 
+        Follow me on Instagram @b31ngd3v 
 
-        Github codein-py
+        Github b31ngd3v
     ''')
 
     x += 1
