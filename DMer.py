@@ -82,7 +82,7 @@ def dmer():
          |  _/ \__ \ | ' \| ' \/ _` |
          |_|   |___/_|_||_|_||_\__,_|
 
-        Follow me on Instagram @b31ngd3v 
+        Follow me on Instagram @b31ngdev 
 
         Github b31ngd3v
     ''')
