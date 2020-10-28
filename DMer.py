@@ -4,13 +4,10 @@ from selenium.webdriver.chrome.options import Options
 import time
 import schedule
 
-
-global x
 x = 0
 
-
 def dmer():
-    usrnames = ['b31ngd3v', 'codeinpy']  # username whom you will send the message
+    usrnames = ['b31ngdev', 'b31ngd3v']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -102,4 +99,4 @@ try:
         schedule.run_pending()
         time.sleep(1)
 except UnboundLocalError:
-    print('')
+    pass
