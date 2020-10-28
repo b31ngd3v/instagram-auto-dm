@@ -55,7 +55,7 @@ def dmer():
         time.sleep(2)
 
         snd_btn = browser.find_elements_by_tag_name('button')
-        snd_btnn = snd_btn.__getitem__(3)
+        snd_btnn = snd_btn[len(snd_btn)-1]
         snd_btnn.click()
 
         time.sleep(4)
