@@ -7,6 +7,7 @@ import schedule
 x = 0
 
 def dmer():
+    global x
     usrnames = ['b31ngdev', 'b31ngd3v']  # username whom you will send the message
 
     chrome_options = Options()
@@ -17,8 +18,8 @@ def dmer():
 
     time.sleep(2)
 
-    usrname_bar = browser.find_element_by_name('username')  # Find the username bar
-    passwrd_bar = browser.find_element_by_name('password')  # Find the password bar
+    usrname_bar = browser.find_element_by_name('username')
+    passwrd_bar = browser.find_element_by_name('password')
 
     username = 'USERNAME'  # Enter your username here
     password = 'PASSWORD'  # Enter your password here
