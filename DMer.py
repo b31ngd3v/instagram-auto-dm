@@ -8,7 +8,7 @@ x = 0
 
 def dmer():
     global x
-    usrnames = ['b31ngdev', 'b31ngd3v']  # username whom you will send the message
+    usrnames = ['instagram', 'twitter']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -73,16 +73,6 @@ def dmer():
 
     print(f'''
     Successfully Sent {count} Massages
-
-    Python Program by
-          ___   ___ _      _         
-         | _ \ / __(_)_ _ | |_  __ _ 
-         |  _/ \__ \ | ' \| ' \/ _` |
-         |_|   |___/_|_||_|_||_\__,_|
-
-        Follow me on Instagram @b31ngdev 
-
-        Github b31ngd3v
     ''')
 
     x += 1
