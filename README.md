@@ -14,7 +14,7 @@ Instagram Auto DM
 
 4) `txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Messege that you want to send` [line:53]
 
-5) `usrnames = ['b31ngdev', 'b31ngd3v']  # username whom you will send the message` [line:11]
+5) `usrnames = ['instagram', 'twitter']  # username whom you will send the message` [line:11]
 
 
 Ensure that you have Chrome installed and the
@@ -44,8 +44,3 @@ pip install schedule
 ```bash
 python DMer.py
 ```
-
-Buy Me a Coffee
-----
-
-<a href="https://www.buymeacoffee.com/b31ngD3v" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height=60px width=217px></a>
